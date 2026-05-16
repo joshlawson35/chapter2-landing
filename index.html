@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2 Web Design - Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <!-- Logo -->
+            <div class="logo">
+                <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Blue line through the middle -->
+                    <line x1="200" y1="450" x2="900" y2="450" stroke="#0066FF" stroke-width="60" stroke-linecap="round"/>
+                    
+                    <!-- Large C (navy) -->
+                    <path d="M 380 300 A 150 150 0 0 0 380 700" fill="none" stroke="#001F3F" stroke-width="90" stroke-linecap="round"/>
+                    
+                    <!-- Small 2 (navy) -->
+                    <g transform="translate(620, 380)">
+                        <!-- 2 shape -->
+                        <path d="M 30 20 Q 30 0 70 0 Q 120 0 120 50 Q 120 100 30 160 L 130 160 M 130 180 L 10 180" 
+                              fill="none" stroke="#001F3F" stroke-width="70" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Company Name -->
+            <h1 class="company-name">CHAPTER 2</h1>
+            <p class="tagline">WEB DESIGN</p>
+
+            <!-- Coming Soon Message -->
+            <div class="coming-soon">
+                <h2>Coming Soon</h2>
+                <p>We're crafting something exceptional for you</p>
+            </div>
+
+            <!-- Email Signup -->
+            <form class="email-form" id="emailForm">
+                <input 
+                    type="email" 
+                    placeholder="Enter your email" 
+                    required
+                    aria-label="Email address"
+                >
+                <button type="submit">Notify Me</button>
+            </form>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <p>
+                    <a href="mailto:josh@chapter2webdesign.com" aria-label="Email us">
+                        <i class="fas fa-envelope"></i> josh@chapter2webdesign.com
+                    </a>
+                </p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://www.facebook.com/chapter2webdesign" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification toast -->
+    <div class="notification" id="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
